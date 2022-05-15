@@ -168,6 +168,7 @@ namespace VIEW
             this.btn_DangNhap.Id = 242;
             this.btn_DangNhap.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_DangNhap.ImageOptions.SvgImage")));
             this.btn_DangNhap.Name = "btn_DangNhap";
+            this.btn_DangNhap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_DangNhap_ItemClick);
             // 
             // btn_TaoTK
             // 
@@ -206,6 +207,7 @@ namespace VIEW
             this.btn_Thoat.Id = 247;
             this.btn_Thoat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Thoat.ImageOptions.SvgImage")));
             this.btn_Thoat.Name = "btn_Thoat";
+            this.btn_Thoat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Thoat_ItemClick);
             // 
             // btn_TrangChu
             // 

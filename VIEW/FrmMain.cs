@@ -54,5 +54,24 @@ namespace VIEW
             else
                 ActiveChildForm("FrmTrangChu");
         }
+
+        private void btn_Thoat_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn_DangNhap_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (!CheckExitForm("FrmDangNhap"))
+            {
+
+                FrmDangNhap form = new FrmDangNhap();
+                form.MdiParent = this;
+                form.Name = "FrmDangNhap";
+                form.Show();
+            }
+            else
+                ActiveChildForm("FrmDangNhap");
+        }
     }
 }
