@@ -87,6 +87,72 @@
     <Compile Include="FrmDangNhap.Designer.cs">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDauSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDauSach.Designer.cs">
+      <DependentUpon>FrmDauSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDocGia.Designer.cs">
+      <DependentUpon>FrmDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoiMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoiMK.Designer.cs">
+      <DependentUpon>FrmDoiMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMuon.Designer.cs">
+      <DependentUpon>FrmMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNXB.Designer.cs">
+      <DependentUpon>FrmNXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSach.Designer.cs">
+      <DependentUpon>FrmSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTacGia.Designer.cs">
+      <DependentUpon>FrmTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTaoTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTaoTK.Designer.cs">
+      <DependentUpon>FrmTaoTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmThongTinTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmThongTinTK.Designer.cs">
+      <DependentUpon>FrmThongTinTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTimKiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTimKiem.Designer.cs">
+      <DependentUpon>FrmTimKiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTra.Designer.cs">
+      <DependentUpon>FrmTra.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +169,39 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmDangNhap.resx">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDauSach.resx">
+      <DependentUpon>FrmDauSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDocGia.resx">
+      <DependentUpon>FrmDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoiMK.resx">
+      <DependentUpon>FrmDoiMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMuon.resx">
+      <DependentUpon>FrmMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNXB.resx">
+      <DependentUpon>FrmNXB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSach.resx">
+      <DependentUpon>FrmSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTacGia.resx">
+      <DependentUpon>FrmTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTaoTK.resx">
+      <DependentUpon>FrmTaoTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmThongTinTK.resx">
+      <DependentUpon>FrmThongTinTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTimKiem.resx">
+      <DependentUpon>FrmTimKiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTra.resx">
+      <DependentUpon>FrmTra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTrangChu.resx">
       <DependentUpon>FrmTrangChu.cs</DependentUpon>

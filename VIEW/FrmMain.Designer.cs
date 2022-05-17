@@ -158,7 +158,7 @@ namespace VIEW
             this.repositoryItemDateEdit1,
             this.repositoryItemMonth1});
             this.ribbon.ShowItemCaptionsInPageHeader = true;
-            this.ribbon.Size = new System.Drawing.Size(1141, 177);
+            this.ribbon.Size = new System.Drawing.Size(1498, 177);
             this.ribbon.StatusBar = this.ribbonStatusBar1;
             this.ribbon.TransparentEditorsMode = DevExpress.Utils.DefaultBoolean.True;
             // 
@@ -177,6 +177,7 @@ namespace VIEW
             this.btn_TaoTK.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_TaoTK.ImageOptions.SvgImage")));
             this.btn_TaoTK.Name = "btn_TaoTK";
             this.btn_TaoTK.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            this.btn_TaoTK.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TaoTK_ItemClick);
             // 
             // btn_DoiMK
             // 
@@ -185,6 +186,7 @@ namespace VIEW
             this.btn_DoiMK.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_DoiMK.ImageOptions.SvgImage")));
             this.btn_DoiMK.Name = "btn_DoiMK";
             this.btn_DoiMK.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            this.btn_DoiMK.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_DoiMK_ItemClick);
             // 
             // btn_DangXuat
             // 
@@ -193,6 +195,7 @@ namespace VIEW
             this.btn_DangXuat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_DangXuat.ImageOptions.SvgImage")));
             this.btn_DangXuat.Name = "btn_DangXuat";
             this.btn_DangXuat.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            this.btn_DangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_DangXuat_ItemClick);
             // 
             // btn_ThongTinTK
             // 
@@ -200,6 +203,7 @@ namespace VIEW
             this.btn_ThongTinTK.Id = 246;
             this.btn_ThongTinTK.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_ThongTinTK.ImageOptions.SvgImage")));
             this.btn_ThongTinTK.Name = "btn_ThongTinTK";
+            this.btn_ThongTinTK.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_ThongTinTK_ItemClick);
             // 
             // btn_Thoat
             // 
@@ -223,6 +227,7 @@ namespace VIEW
             this.btn_TimKiem.Id = 249;
             this.btn_TimKiem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_TimKiem.ImageOptions.SvgImage")));
             this.btn_TimKiem.Name = "btn_TimKiem";
+            this.btn_TimKiem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TimKiem_ItemClick);
             // 
             // btn_NXB
             // 
@@ -230,6 +235,7 @@ namespace VIEW
             this.btn_NXB.Id = 250;
             this.btn_NXB.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_NXB.ImageOptions.SvgImage")));
             this.btn_NXB.Name = "btn_NXB";
+            this.btn_NXB.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_NXB_ItemClick);
             // 
             // btn_TacGia
             // 
@@ -237,6 +243,7 @@ namespace VIEW
             this.btn_TacGia.Id = 251;
             this.btn_TacGia.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_TacGia.ImageOptions.SvgImage")));
             this.btn_TacGia.Name = "btn_TacGia";
+            this.btn_TacGia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TacGia_ItemClick);
             // 
             // btn_DocGia
             // 
@@ -244,6 +251,7 @@ namespace VIEW
             this.btn_DocGia.Id = 252;
             this.btn_DocGia.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_DocGia.ImageOptions.SvgImage")));
             this.btn_DocGia.Name = "btn_DocGia";
+            this.btn_DocGia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_DocGia_ItemClick);
             // 
             // btn_DauSach
             // 
@@ -251,6 +259,7 @@ namespace VIEW
             this.btn_DauSach.Id = 253;
             this.btn_DauSach.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_DauSach.ImageOptions.SvgImage")));
             this.btn_DauSach.Name = "btn_DauSach";
+            this.btn_DauSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_DauSach_ItemClick);
             // 
             // btn_Sach
             // 
@@ -258,6 +267,7 @@ namespace VIEW
             this.btn_Sach.Id = 254;
             this.btn_Sach.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Sach.ImageOptions.SvgImage")));
             this.btn_Sach.Name = "btn_Sach";
+            this.btn_Sach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Sach_ItemClick);
             // 
             // btn_Muon
             // 
@@ -265,6 +275,7 @@ namespace VIEW
             this.btn_Muon.Id = 255;
             this.btn_Muon.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Muon.ImageOptions.SvgImage")));
             this.btn_Muon.Name = "btn_Muon";
+            this.btn_Muon.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Muon_ItemClick);
             // 
             // btn_Tra
             // 
@@ -272,6 +283,7 @@ namespace VIEW
             this.btn_Tra.Id = 256;
             this.btn_Tra.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Tra.ImageOptions.SvgImage")));
             this.btn_Tra.Name = "btn_Tra";
+            this.btn_Tra.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Tra_ItemClick);
             // 
             // barStaticItem1
             // 
@@ -402,10 +414,10 @@ namespace VIEW
             // ribbonStatusBar1
             // 
             this.ribbonStatusBar1.ItemLinks.Add(this.barStaticItem1);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 762);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 775);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbon;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1141, 24);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1498, 24);
             // 
             // FrmMain
             // 
@@ -413,13 +425,14 @@ namespace VIEW
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1141, 786);
+            this.ClientSize = new System.Drawing.Size(1498, 799);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbon);
             this.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IconOptions.Image = global::VIEW.Properties.Resources.icons8_books_emoji_64;
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MinimumSize = new System.Drawing.Size(1500, 800);
             this.Name = "FrmMain";
             this.Ribbon = this.ribbon;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -441,3 +441,14 @@ C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.csproj.CopyComplete
 C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.exe
 C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.pdb
 C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.FrmDangNhap.resources
+C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.FrmDauSach.resources
+C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.FrmDocGia.resources
+C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.FrmDoiMK.resources
+C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.FrmMuon.resources
+C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.FrmNXB.resources
+C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.FrmSach.resources
+C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.FrmTacGia.resources
+C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.FrmTaoTK.resources
+C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.FrmThongTinTK.resources
+C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.FrmTimKiem.resources
+C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.FrmTra.resources
