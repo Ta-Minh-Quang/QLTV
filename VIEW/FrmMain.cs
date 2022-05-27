@@ -182,7 +182,7 @@ namespace VIEW
             if (!CheckExitForm("FrmDauSach"))
             {
 
-                FrmDauSach form = new FrmDauSach();
+                FrmTheLoai form = new FrmTheLoai();
                 form.MdiParent = this;
                 form.Name = "FrmDauSach";
                 form.Show();

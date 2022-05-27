@@ -16,5 +16,20 @@ namespace VIEW
         {
             InitializeComponent();
         }
+
+        private void tb_TK_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -87,11 +87,11 @@
     <Compile Include="FrmDangNhap.Designer.cs">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmDauSach.cs">
+    <Compile Include="FrmTheLoai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmDauSach.Designer.cs">
-      <DependentUpon>FrmDauSach.cs</DependentUpon>
+    <Compile Include="FrmTheLoai.Designer.cs">
+      <DependentUpon>FrmTheLoai.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDocGia.cs">
       <SubType>Form</SubType>
@@ -170,8 +170,8 @@
     <EmbeddedResource Include="FrmDangNhap.resx">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmDauSach.resx">
-      <DependentUpon>FrmDauSach.cs</DependentUpon>
+    <EmbeddedResource Include="FrmTheLoai.resx">
+      <DependentUpon>FrmTheLoai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDocGia.resx">
       <DependentUpon>FrmDocGia.cs</DependentUpon>

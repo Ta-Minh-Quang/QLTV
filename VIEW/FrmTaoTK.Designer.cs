@@ -53,7 +53,7 @@ namespace VIEW
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1000, 700);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1500, 623);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -61,9 +61,9 @@ namespace VIEW
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(253, 108);
+            this.panel1.Location = new System.Drawing.Point(378, 96);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(494, 484);
+            this.panel1.Size = new System.Drawing.Size(744, 430);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -84,7 +84,7 @@ namespace VIEW
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(494, 484);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(744, 430);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label1
@@ -96,7 +96,7 @@ namespace VIEW
             this.label1.ForeColor = System.Drawing.Color.FloralWhite;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(488, 96);
+            this.label1.Size = new System.Drawing.Size(738, 86);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tạo tài khoản";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -105,7 +105,7 @@ namespace VIEW
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 700);
+            this.ClientSize = new System.Drawing.Size(1500, 623);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmTaoTK";
