@@ -179,16 +179,16 @@ namespace VIEW
 
         private void btn_DauSach_ItemClick(object sender, ItemClickEventArgs e)
         {
-            if (!CheckExitForm("FrmDauSach"))
-            {
+            //if (!CheckExitForm("FrmDauSach"))
+            //{
 
-                FrmTheLoai form = new FrmTheLoai();
-                form.MdiParent = this;
-                form.Name = "FrmDauSach";
-                form.Show();
-            }
-            else
-                ActiveChildForm("FrmDauSach");
+            //    FrmTheLoai form = new FrmTheLoai();
+            //    form.MdiParent = this;
+            //    form.Name = "FrmDauSach";
+            //    form.Show();
+            //}
+            //else
+            //    ActiveChildForm("FrmDauSach");
         }
 
         private void btn_Sach_ItemClick(object sender, ItemClickEventArgs e)
