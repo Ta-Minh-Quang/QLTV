@@ -63,6 +63,16 @@ namespace VIEW.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap avt_default {
+            get {
+                object obj = ResourceManager.GetObject("avt-default", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cse {
             get {
                 object obj = ResourceManager.GetObject("cse", resourceCulture);

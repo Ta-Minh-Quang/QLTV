@@ -87,12 +87,6 @@
     <Compile Include="FrmDangNhap.Designer.cs">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmTheLoai.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmTheLoai.Designer.cs">
-      <DependentUpon>FrmTheLoai.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmDocGia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +129,12 @@
     <Compile Include="FrmTaoTK.Designer.cs">
       <DependentUpon>FrmTaoTK.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTheLoai.Designer.cs">
+      <DependentUpon>FrmTheLoai.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmThongTinTK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,9 +169,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmDangNhap.resx">
       <DependentUpon>FrmDangNhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmTheLoai.resx">
-      <DependentUpon>FrmTheLoai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDocGia.resx">
       <DependentUpon>FrmDocGia.cs</DependentUpon>
@@ -269,6 +266,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_books_emoji_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avt-default.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

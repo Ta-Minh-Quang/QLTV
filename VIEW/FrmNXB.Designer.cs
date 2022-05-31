@@ -273,7 +273,7 @@ namespace VIEW
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(133, 33);
             this.label2.TabIndex = 0;
-            this.label2.Text = "SDT";
+            this.label2.Text = "SĐT";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox3

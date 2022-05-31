@@ -54,6 +54,7 @@ namespace VIEW
             this.btn_Muon = new DevExpress.XtraBars.BarButtonItem();
             this.btn_Tra = new DevExpress.XtraBars.BarButtonItem();
             this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.p_HeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.pg_TrangChu = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.pg_TaiKhoan = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -69,6 +70,7 @@ namespace VIEW
             this.repositoryItemDateEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
             this.repositoryItemMonth1 = new DevExpress.XtraScheduler.UI.RepositoryItemMonth();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeEdit1)).BeginInit();
@@ -145,10 +147,12 @@ namespace VIEW
             this.btn_Sach,
             this.btn_Muon,
             this.btn_Tra,
-            this.barStaticItem1});
+            this.barStaticItem1,
+            this.barButtonItem1,
+            this.barButtonItem2});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ribbon.MaxItemId = 263;
+            this.ribbon.MaxItemId = 265;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.p_HeThong,
@@ -291,6 +295,13 @@ namespace VIEW
             this.barStaticItem1.Id = 261;
             this.barStaticItem1.Name = "barStaticItem1";
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Thẻ thành viên";
+            this.barButtonItem1.Id = 263;
+            this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
             // p_HeThong
             // 
             this.p_HeThong.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold);
@@ -369,12 +380,14 @@ namespace VIEW
             // 
             this.pg_DocGia.AllowTextClipping = false;
             this.pg_DocGia.ItemLinks.Add(this.btn_DocGia);
+            this.pg_DocGia.ItemLinks.Add(this.barButtonItem1);
             this.pg_DocGia.Name = "pg_DocGia";
             this.pg_DocGia.Text = "Độc giả";
             // 
             // pg_Sach
             // 
             this.pg_Sach.AllowTextClipping = false;
+            this.pg_Sach.ItemLinks.Add(this.barButtonItem2);
             this.pg_Sach.ItemLinks.Add(this.btn_DauSach);
             this.pg_Sach.ItemLinks.Add(this.btn_Sach);
             this.pg_Sach.Name = "pg_Sach";
@@ -418,6 +431,13 @@ namespace VIEW
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbon;
             this.ribbonStatusBar1.Size = new System.Drawing.Size(1498, 24);
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "QL Kệ sách";
+            this.barButtonItem2.Id = 264;
+            this.barButtonItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
+            this.barButtonItem2.Name = "barButtonItem2";
             // 
             // FrmMain
             // 
@@ -490,5 +510,7 @@ namespace VIEW
         private DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit repositoryItemTimeEdit1;
         private DevExpress.XtraScheduler.UI.RepositoryItemMonth repositoryItemMonth1;
         private DevExpress.XtraBars.BarStaticItem barStaticItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
     }
 }
