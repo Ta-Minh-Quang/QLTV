@@ -30,7 +30,7 @@ namespace VIEW
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmKeSach));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bt_Thoat = new DevExpress.XtraEditors.SimpleButton();
             this.bt_Huy = new DevExpress.XtraEditors.SimpleButton();
             this.bt_Luu = new DevExpress.XtraEditors.SimpleButton();
@@ -78,7 +78,7 @@ namespace VIEW
             // 
             // bt_Thoat
             // 
-            this.bt_Thoat.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Thoat.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Thoat.Appearance.Options.UseFont = true;
             this.bt_Thoat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bt_Thoat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bt_Thoat.ImageOptions.SvgImage")));
@@ -91,7 +91,7 @@ namespace VIEW
             // 
             // bt_Huy
             // 
-            this.bt_Huy.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Huy.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Huy.Appearance.Options.UseFont = true;
             this.bt_Huy.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bt_Huy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bt_Huy.ImageOptions.SvgImage")));
@@ -104,7 +104,7 @@ namespace VIEW
             // 
             // bt_Luu
             // 
-            this.bt_Luu.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Luu.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Luu.Appearance.Options.UseFont = true;
             this.bt_Luu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bt_Luu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bt_Luu.ImageOptions.SvgImage")));
@@ -117,7 +117,7 @@ namespace VIEW
             // 
             // bt_Xoa
             // 
-            this.bt_Xoa.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Xoa.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Xoa.Appearance.Options.UseFont = true;
             this.bt_Xoa.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bt_Xoa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bt_Xoa.ImageOptions.SvgImage")));
@@ -130,7 +130,7 @@ namespace VIEW
             // 
             // bt_Sua
             // 
-            this.bt_Sua.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Sua.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Sua.Appearance.Options.UseFont = true;
             this.bt_Sua.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bt_Sua.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bt_Sua.ImageOptions.SvgImage")));
@@ -143,7 +143,7 @@ namespace VIEW
             // 
             // bt_LamMoi
             // 
-            this.bt_LamMoi.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_LamMoi.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_LamMoi.Appearance.Options.UseFont = true;
             this.bt_LamMoi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bt_LamMoi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bt_LamMoi.ImageOptions.SvgImage")));
@@ -156,7 +156,7 @@ namespace VIEW
             // 
             // groupControl3
             // 
-            this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupControl3.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupControl3.AppearanceCaption.Options.UseFont = true;
             this.groupControl3.CaptionImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("groupControl3.CaptionImageOptions.SvgImage")));
             this.groupControl3.Controls.Add(this.dataGridView_LoaiSach);
@@ -180,8 +180,8 @@ namespace VIEW
             this.dataGridView_LoaiSach.Name = "dataGridView_LoaiSach";
             this.dataGridView_LoaiSach.ReadOnly = true;
             this.dataGridView_LoaiSach.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView_LoaiSach.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_LoaiSach.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView_LoaiSach.RowTemplate.Height = 24;
             this.dataGridView_LoaiSach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_LoaiSach.Size = new System.Drawing.Size(1476, 254);
@@ -218,7 +218,7 @@ namespace VIEW
             // 
             // bt_Them
             // 
-            this.bt_Them.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Them.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Them.Appearance.Options.UseFont = true;
             this.bt_Them.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bt_Them.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bt_Them.ImageOptions.SvgImage")));
@@ -245,8 +245,8 @@ namespace VIEW
             // tb_TenLoai
             // 
             this.tb_TenLoai.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_TenLoai.Location = new System.Drawing.Point(264, 2);
-            this.tb_TenLoai.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_TenLoai.Location = new System.Drawing.Point(264, 10);
+            this.tb_TenLoai.Margin = new System.Windows.Forms.Padding(2, 10, 2, 2);
             this.tb_TenLoai.Name = "tb_TenLoai";
             this.tb_TenLoai.Size = new System.Drawing.Size(434, 30);
             this.tb_TenLoai.TabIndex = 1;
@@ -320,15 +320,15 @@ namespace VIEW
             // tb_MaLoai
             // 
             this.tb_MaLoai.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_MaLoai.Location = new System.Drawing.Point(264, 2);
-            this.tb_MaLoai.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_MaLoai.Location = new System.Drawing.Point(264, 10);
+            this.tb_MaLoai.Margin = new System.Windows.Forms.Padding(2, 10, 2, 2);
             this.tb_MaLoai.Name = "tb_MaLoai";
             this.tb_MaLoai.Size = new System.Drawing.Size(434, 30);
             this.tb_MaLoai.TabIndex = 1;
             // 
             // groupControl2
             // 
-            this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
             this.groupControl2.CaptionImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("groupControl2.CaptionImageOptions.SvgImage")));
             this.groupControl2.Controls.Add(this.tableLayoutPanel6);
@@ -358,6 +358,7 @@ namespace VIEW
             this.radioButton_maLoai.Location = new System.Drawing.Point(2, 2);
             this.radioButton_maLoai.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton_maLoai.Name = "radioButton_maLoai";
+            this.radioButton_maLoai.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
             this.radioButton_maLoai.Size = new System.Drawing.Size(572, 53);
             this.radioButton_maLoai.TabIndex = 0;
             this.radioButton_maLoai.TabStop = true;
@@ -372,6 +373,7 @@ namespace VIEW
             this.radioButton_tenLoai.Location = new System.Drawing.Point(2, 59);
             this.radioButton_tenLoai.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton_tenLoai.Name = "radioButton_tenLoai";
+            this.radioButton_tenLoai.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
             this.radioButton_tenLoai.Size = new System.Drawing.Size(572, 53);
             this.radioButton_tenLoai.TabIndex = 1;
             this.radioButton_tenLoai.Text = "Tên kệ sách";
@@ -425,7 +427,7 @@ namespace VIEW
             // 
             // gr_TimKiem
             // 
-            this.gr_TimKiem.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gr_TimKiem.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gr_TimKiem.AppearanceCaption.Options.UseFont = true;
             this.gr_TimKiem.CaptionImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("gr_TimKiem.CaptionImageOptions.SvgImage")));
             this.gr_TimKiem.Controls.Add(this.groupBox1);
