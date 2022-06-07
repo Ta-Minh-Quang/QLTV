@@ -179,16 +179,16 @@ namespace VIEW
 
         private void btn_DauSach_ItemClick(object sender, ItemClickEventArgs e)
         {
-            //if (!CheckExitForm("FrmDauSach"))
-            //{
+            if (!CheckExitForm("FrmTheLoai"))
+            {
 
-            //    FrmTheLoai form = new FrmTheLoai();
-            //    form.MdiParent = this;
-            //    form.Name = "FrmDauSach";
-            //    form.Show();
-            //}
-            //else
-            //    ActiveChildForm("FrmDauSach");
+                FrmTheLoai form = new FrmTheLoai();
+                form.MdiParent = this;
+                form.Name = "FrmTheLoai";
+                form.Show();
+            }
+            else
+                ActiveChildForm("FrmTheLoai");
         }
 
         private void btn_Sach_ItemClick(object sender, ItemClickEventArgs e)
@@ -231,6 +231,20 @@ namespace VIEW
             }
             else
                 ActiveChildForm("FrmTra");
+        }
+
+        private void btn_TheTV_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (!CheckExitForm("FrmTheTV"))
+            {
+
+                FrmTheTV form = new FrmTheTV();
+                form.MdiParent = this;
+                form.Name = "FrmTheTV";
+                form.Show();
+            }
+            else
+                ActiveChildForm("FrmTheTV");
         }
     }
 }

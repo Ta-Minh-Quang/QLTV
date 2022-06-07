@@ -49,12 +49,13 @@ namespace VIEW
             this.btn_NXB = new DevExpress.XtraBars.BarButtonItem();
             this.btn_TacGia = new DevExpress.XtraBars.BarButtonItem();
             this.btn_DocGia = new DevExpress.XtraBars.BarButtonItem();
-            this.btn_DauSach = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_TheLoai = new DevExpress.XtraBars.BarButtonItem();
             this.btn_Sach = new DevExpress.XtraBars.BarButtonItem();
             this.btn_Muon = new DevExpress.XtraBars.BarButtonItem();
             this.btn_Tra = new DevExpress.XtraBars.BarButtonItem();
             this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_TheTV = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.p_HeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.pg_TrangChu = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.pg_TaiKhoan = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -70,7 +71,6 @@ namespace VIEW
             this.repositoryItemDateEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
             this.repositoryItemMonth1 = new DevExpress.XtraScheduler.UI.RepositoryItemMonth();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeEdit1)).BeginInit();
@@ -143,12 +143,12 @@ namespace VIEW
             this.btn_NXB,
             this.btn_TacGia,
             this.btn_DocGia,
-            this.btn_DauSach,
+            this.btn_TheLoai,
             this.btn_Sach,
             this.btn_Muon,
             this.btn_Tra,
             this.barStaticItem1,
-            this.barButtonItem1,
+            this.btn_TheTV,
             this.barButtonItem2});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -257,13 +257,13 @@ namespace VIEW
             this.btn_DocGia.Name = "btn_DocGia";
             this.btn_DocGia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_DocGia_ItemClick);
             // 
-            // btn_DauSach
+            // btn_TheLoai
             // 
-            this.btn_DauSach.Caption = "QL Đầu sách";
-            this.btn_DauSach.Id = 253;
-            this.btn_DauSach.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_DauSach.ImageOptions.SvgImage")));
-            this.btn_DauSach.Name = "btn_DauSach";
-            this.btn_DauSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_DauSach_ItemClick);
+            this.btn_TheLoai.Caption = "QL Thể loại";
+            this.btn_TheLoai.Id = 253;
+            this.btn_TheLoai.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_DauSach.ImageOptions.SvgImage")));
+            this.btn_TheLoai.Name = "btn_TheLoai";
+            this.btn_TheLoai.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_DauSach_ItemClick);
             // 
             // btn_Sach
             // 
@@ -295,12 +295,20 @@ namespace VIEW
             this.barStaticItem1.Id = 261;
             this.barStaticItem1.Name = "barStaticItem1";
             // 
-            // barButtonItem1
+            // btn_TheTV
             // 
-            this.barButtonItem1.Caption = "Thẻ thành viên";
-            this.barButtonItem1.Id = 263;
-            this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.btn_TheTV.Caption = "Thẻ thành viên";
+            this.btn_TheTV.Id = 263;
+            this.btn_TheTV.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.btn_TheTV.Name = "btn_TheTV";
+            this.btn_TheTV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TheTV_ItemClick);
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "QL Kệ sách";
+            this.barButtonItem2.Id = 264;
+            this.barButtonItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
+            this.barButtonItem2.Name = "barButtonItem2";
             // 
             // p_HeThong
             // 
@@ -380,7 +388,7 @@ namespace VIEW
             // 
             this.pg_DocGia.AllowTextClipping = false;
             this.pg_DocGia.ItemLinks.Add(this.btn_DocGia);
-            this.pg_DocGia.ItemLinks.Add(this.barButtonItem1);
+            this.pg_DocGia.ItemLinks.Add(this.btn_TheTV);
             this.pg_DocGia.Name = "pg_DocGia";
             this.pg_DocGia.Text = "Độc giả";
             // 
@@ -388,7 +396,7 @@ namespace VIEW
             // 
             this.pg_Sach.AllowTextClipping = false;
             this.pg_Sach.ItemLinks.Add(this.barButtonItem2);
-            this.pg_Sach.ItemLinks.Add(this.btn_DauSach);
+            this.pg_Sach.ItemLinks.Add(this.btn_TheLoai);
             this.pg_Sach.ItemLinks.Add(this.btn_Sach);
             this.pg_Sach.Name = "pg_Sach";
             this.pg_Sach.Text = "Sách";
@@ -431,13 +439,6 @@ namespace VIEW
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbon;
             this.ribbonStatusBar1.Size = new System.Drawing.Size(1498, 24);
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "QL Kệ sách";
-            this.barButtonItem2.Id = 264;
-            this.barButtonItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
-            this.barButtonItem2.Name = "barButtonItem2";
             // 
             // FrmMain
             // 
@@ -496,7 +497,7 @@ namespace VIEW
         private DevExpress.XtraBars.BarButtonItem btn_NXB;
         private DevExpress.XtraBars.BarButtonItem btn_TacGia;
         private DevExpress.XtraBars.BarButtonItem btn_DocGia;
-        private DevExpress.XtraBars.BarButtonItem btn_DauSach;
+        private DevExpress.XtraBars.BarButtonItem btn_TheLoai;
         private DevExpress.XtraBars.BarButtonItem btn_Sach;
         private DevExpress.XtraBars.BarButtonItem btn_Muon;
         private DevExpress.XtraBars.BarButtonItem btn_Tra;
@@ -510,7 +511,7 @@ namespace VIEW
         private DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit repositoryItemTimeEdit1;
         private DevExpress.XtraScheduler.UI.RepositoryItemMonth repositoryItemMonth1;
         private DevExpress.XtraBars.BarStaticItem barStaticItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem btn_TheTV;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
     }
 }

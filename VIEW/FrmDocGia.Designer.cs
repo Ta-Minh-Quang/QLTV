@@ -193,9 +193,10 @@ namespace VIEW
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(3, 133);
+            this.textBox1.Location = new System.Drawing.Point(10, 133);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(282, 36);
+            this.textBox1.Size = new System.Drawing.Size(268, 36);
             this.textBox1.TabIndex = 1;
             // 
             // groupControl3

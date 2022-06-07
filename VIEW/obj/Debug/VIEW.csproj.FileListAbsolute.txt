@@ -670,3 +670,5 @@ C:\Users\Admin\Desktop\QLTV\VIEW\obj\Debug\VIEW.csproj.CopyComplete
 C:\Users\Admin\Desktop\QLTV\VIEW\obj\Debug\VIEW.exe
 C:\Users\Admin\Desktop\QLTV\VIEW\obj\Debug\VIEW.pdb
 C:\Users\Admin\Desktop\QLTV\VIEW\obj\Debug\VIEW.FrmTheLoai.resources
+C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.FrmTheTV.resources
+C:\Users\taqua\Desktop\QLTV\VIEW\obj\Debug\VIEW.FrmTheLoai.resources
