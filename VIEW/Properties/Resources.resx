@@ -118,14 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="thang" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\thang.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8_books_emoji_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_books_emoji_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ninh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ninh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="thang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\thang.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tlu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tlu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cse1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cse1.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,16 +139,19 @@
   <data name="quang" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\quang.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cse" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cse.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ninh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ninh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_books_emoji_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_books_emoji_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tlu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tlu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cse.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="avt-default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\avt-default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\book_img.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
