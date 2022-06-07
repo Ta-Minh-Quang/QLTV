@@ -16,5 +16,15 @@ namespace VIEW
         {
             InitializeComponent();
         }
+
+        private void FrmTheLoai_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

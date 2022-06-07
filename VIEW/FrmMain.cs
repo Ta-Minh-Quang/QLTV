@@ -246,5 +246,19 @@ namespace VIEW
             else
                 ActiveChildForm("FrmTheTV");
         }
+
+        private void btn_kesach_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (!CheckExitForm("FrmKeSach"))
+            {
+
+                FrmKeSach form = new FrmKeSach();
+                form.MdiParent = this;
+                form.Name = "FrmKeSach";
+                form.Show();
+            }
+            else
+                ActiveChildForm("FrmKeSach");
+        }
     }
 }

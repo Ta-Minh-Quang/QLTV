@@ -55,7 +55,7 @@ namespace VIEW
             this.btn_Tra = new DevExpress.XtraBars.BarButtonItem();
             this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
             this.btn_TheTV = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_kesach = new DevExpress.XtraBars.BarButtonItem();
             this.p_HeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.pg_TrangChu = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.pg_TaiKhoan = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -149,7 +149,7 @@ namespace VIEW
             this.btn_Tra,
             this.barStaticItem1,
             this.btn_TheTV,
-            this.barButtonItem2});
+            this.btn_kesach});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbon.MaxItemId = 265;
@@ -261,7 +261,7 @@ namespace VIEW
             // 
             this.btn_TheLoai.Caption = "QL Thể loại";
             this.btn_TheLoai.Id = 253;
-            this.btn_TheLoai.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_DauSach.ImageOptions.SvgImage")));
+            this.btn_TheLoai.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_TheLoai.ImageOptions.SvgImage")));
             this.btn_TheLoai.Name = "btn_TheLoai";
             this.btn_TheLoai.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_DauSach_ItemClick);
             // 
@@ -299,16 +299,17 @@ namespace VIEW
             // 
             this.btn_TheTV.Caption = "Thẻ thành viên";
             this.btn_TheTV.Id = 263;
-            this.btn_TheTV.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.btn_TheTV.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_TheTV.ImageOptions.SvgImage")));
             this.btn_TheTV.Name = "btn_TheTV";
             this.btn_TheTV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TheTV_ItemClick);
             // 
-            // barButtonItem2
+            // btn_kesach
             // 
-            this.barButtonItem2.Caption = "QL Kệ sách";
-            this.barButtonItem2.Id = 264;
-            this.barButtonItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
-            this.barButtonItem2.Name = "barButtonItem2";
+            this.btn_kesach.Caption = "QL Kệ sách";
+            this.btn_kesach.Id = 264;
+            this.btn_kesach.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
+            this.btn_kesach.Name = "btn_kesach";
+            this.btn_kesach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_kesach_ItemClick);
             // 
             // p_HeThong
             // 
@@ -395,7 +396,7 @@ namespace VIEW
             // pg_Sach
             // 
             this.pg_Sach.AllowTextClipping = false;
-            this.pg_Sach.ItemLinks.Add(this.barButtonItem2);
+            this.pg_Sach.ItemLinks.Add(this.btn_kesach);
             this.pg_Sach.ItemLinks.Add(this.btn_TheLoai);
             this.pg_Sach.ItemLinks.Add(this.btn_Sach);
             this.pg_Sach.Name = "pg_Sach";
@@ -512,6 +513,6 @@ namespace VIEW
         private DevExpress.XtraScheduler.UI.RepositoryItemMonth repositoryItemMonth1;
         private DevExpress.XtraBars.BarStaticItem barStaticItem1;
         private DevExpress.XtraBars.BarButtonItem btn_TheTV;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem btn_kesach;
     }
 }
