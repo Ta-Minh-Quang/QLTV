@@ -10,3 +10,9 @@ C:\Users\taqua\source\repos\QLTV\DTO\obj\Debug\DTO.csproj.AssemblyReference.cach
 C:\Users\taqua\source\repos\QLTV\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\taqua\source\repos\QLTV\DTO\obj\Debug\DTO.dll
 C:\Users\taqua\source\repos\QLTV\DTO\obj\Debug\DTO.pdb
+C:\Users\taqua\Desktop\QLTV\QLTV\DTO\bin\Debug\DTO.dll
+C:\Users\taqua\Desktop\QLTV\QLTV\DTO\bin\Debug\DTO.pdb
+C:\Users\taqua\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\taqua\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\taqua\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.dll
+C:\Users\taqua\Desktop\QLTV\QLTV\DTO\obj\Debug\DTO.pdb

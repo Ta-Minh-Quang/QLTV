@@ -48,3 +48,14 @@ C:\Users\taqua\Desktop\QLTV\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 C:\Users\taqua\Desktop\QLTV\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\taqua\Desktop\QLTV\BLL\obj\Debug\BLL.dll
 C:\Users\taqua\Desktop\QLTV\BLL\obj\Debug\BLL.pdb
+C:\Users\taqua\Desktop\QLTV\QLTV\BLL\bin\Debug\BLL.dll
+C:\Users\taqua\Desktop\QLTV\QLTV\BLL\bin\Debug\BLL.pdb
+C:\Users\taqua\Desktop\QLTV\QLTV\BLL\bin\Debug\DAL.dll
+C:\Users\taqua\Desktop\QLTV\QLTV\BLL\bin\Debug\DTO.dll
+C:\Users\taqua\Desktop\QLTV\QLTV\BLL\bin\Debug\DAL.pdb
+C:\Users\taqua\Desktop\QLTV\QLTV\BLL\bin\Debug\DTO.pdb
+C:\Users\taqua\Desktop\QLTV\QLTV\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\taqua\Desktop\QLTV\QLTV\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\taqua\Desktop\QLTV\QLTV\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\taqua\Desktop\QLTV\QLTV\BLL\obj\Debug\BLL.dll
+C:\Users\taqua\Desktop\QLTV\QLTV\BLL\obj\Debug\BLL.pdb

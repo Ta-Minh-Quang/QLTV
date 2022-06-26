@@ -30,3 +30,12 @@ C:\Users\Admin\Desktop\QLTV\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\QLTV\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Admin\Desktop\QLTV\DAL\obj\Debug\DAL.dll
 C:\Users\Admin\Desktop\QLTV\DAL\obj\Debug\DAL.pdb
+C:\Users\taqua\Desktop\QLTV\QLTV\DAL\bin\Debug\DAL.dll
+C:\Users\taqua\Desktop\QLTV\QLTV\DAL\bin\Debug\DAL.pdb
+C:\Users\taqua\Desktop\QLTV\QLTV\DAL\bin\Debug\DTO.dll
+C:\Users\taqua\Desktop\QLTV\QLTV\DAL\bin\Debug\DTO.pdb
+C:\Users\taqua\Desktop\QLTV\QLTV\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\taqua\Desktop\QLTV\QLTV\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\taqua\Desktop\QLTV\QLTV\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\taqua\Desktop\QLTV\QLTV\DAL\obj\Debug\DAL.dll
+C:\Users\taqua\Desktop\QLTV\QLTV\DAL\obj\Debug\DAL.pdb

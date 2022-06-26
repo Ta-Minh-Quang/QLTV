@@ -10,7 +10,7 @@ namespace DAL
 {
     public class Connection
     {
-        private string stringConnection = @"Data Source=.\SQLEXPRESS;Initial Catalog=QLThuVien;Integrated Security=True";
+        private string stringConnection = @"Data Source=.\SQLEXPRESS;Initial Catalog=DB_QuanLyThuVien;Integrated Security=True";
         private SqlDataAdapter _myAdapter;
 
         public SqlConnection getConnection()

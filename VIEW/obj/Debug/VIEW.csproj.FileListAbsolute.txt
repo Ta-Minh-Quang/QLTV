@@ -895,3 +895,5 @@ C:\Users\taqua\Desktop\QLTV\QLTV\VIEW\obj\Debug\VIEW.csproj.CoreCompileInputs.ca
 C:\Users\taqua\Desktop\QLTV\QLTV\VIEW\obj\Debug\VIEW.csproj.CopyComplete
 C:\Users\taqua\Desktop\QLTV\QLTV\VIEW\obj\Debug\VIEW.exe
 C:\Users\taqua\Desktop\QLTV\QLTV\VIEW\obj\Debug\VIEW.pdb
+C:\Users\taqua\Desktop\QLTV\QLTV\VIEW\bin\Debug\DAL.dll
+C:\Users\taqua\Desktop\QLTV\QLTV\VIEW\bin\Debug\DAL.pdb

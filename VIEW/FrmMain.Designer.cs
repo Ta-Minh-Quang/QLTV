@@ -307,12 +307,13 @@ namespace VIEW
             // 
             this.btn_kesach.Caption = "QL Kệ sách";
             this.btn_kesach.Id = 264;
-            this.btn_kesach.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
+            this.btn_kesach.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_kesach.ImageOptions.SvgImage")));
             this.btn_kesach.Name = "btn_kesach";
             this.btn_kesach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_kesach_ItemClick);
             // 
             // p_HeThong
             // 
+            this.p_HeThong.Appearance.BackColor2 = System.Drawing.Color.Transparent;
             this.p_HeThong.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold);
             this.p_HeThong.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.p_HeThong.Appearance.Options.UseFont = true;
