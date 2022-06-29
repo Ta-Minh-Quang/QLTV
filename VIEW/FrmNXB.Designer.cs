@@ -32,15 +32,14 @@ namespace VIEW
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNXB));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.grcSearch = new DevExpress.XtraEditors.GroupControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.rbMa = new System.Windows.Forms.RadioButton();
-            this.rbTen = new System.Windows.Forms.RadioButton();
+            this.chkMa = new System.Windows.Forms.RadioButton();
+            this.chkTen = new System.Windows.Forms.RadioButton();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.grcInfo = new DevExpress.XtraEditors.GroupControl();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -48,8 +47,8 @@ namespace VIEW
             this.label2 = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNguoiDaiDien = new System.Windows.Forms.TextBox();
@@ -59,6 +58,9 @@ namespace VIEW
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.txtTenNXB = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.btRefresh = new DevExpress.XtraEditors.SimpleButton();
             this.btAdd = new DevExpress.XtraEditors.SimpleButton();
@@ -90,6 +92,7 @@ namespace VIEW
             this.tableLayoutPanel10.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
+            this.tableLayoutPanel12.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grcList)).BeginInit();
             this.grcList.SuspendLayout();
@@ -175,8 +178,8 @@ namespace VIEW
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.rbMa, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.rbTen, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.chkMa, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.chkTen, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -185,31 +188,31 @@ namespace VIEW
             this.tableLayoutPanel4.Size = new System.Drawing.Size(426, 53);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
-            // rbMa
+            // chkMa
             // 
-            this.rbMa.AutoSize = true;
-            this.rbMa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbMa.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbMa.Location = new System.Drawing.Point(3, 3);
-            this.rbMa.Name = "rbMa";
-            this.rbMa.Size = new System.Drawing.Size(207, 47);
-            this.rbMa.TabIndex = 0;
-            this.rbMa.TabStop = true;
-            this.rbMa.Text = "Mã NXB";
-            this.rbMa.UseVisualStyleBackColor = true;
+            this.chkMa.AutoSize = true;
+            this.chkMa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chkMa.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkMa.Location = new System.Drawing.Point(3, 3);
+            this.chkMa.Name = "chkMa";
+            this.chkMa.Size = new System.Drawing.Size(207, 47);
+            this.chkMa.TabIndex = 0;
+            this.chkMa.TabStop = true;
+            this.chkMa.Text = "Mã NXB";
+            this.chkMa.UseVisualStyleBackColor = true;
             // 
-            // rbTen
+            // chkTen
             // 
-            this.rbTen.AutoSize = true;
-            this.rbTen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbTen.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbTen.Location = new System.Drawing.Point(216, 3);
-            this.rbTen.Name = "rbTen";
-            this.rbTen.Size = new System.Drawing.Size(207, 47);
-            this.rbTen.TabIndex = 1;
-            this.rbTen.TabStop = true;
-            this.rbTen.Text = "Tên NXB";
-            this.rbTen.UseVisualStyleBackColor = true;
+            this.chkTen.AutoSize = true;
+            this.chkTen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chkTen.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkTen.Location = new System.Drawing.Point(216, 3);
+            this.chkTen.Name = "chkTen";
+            this.chkTen.Size = new System.Drawing.Size(207, 47);
+            this.chkTen.TabIndex = 0;
+            this.chkTen.TabStop = true;
+            this.chkTen.Text = "Tên NXB";
+            this.chkTen.UseVisualStyleBackColor = true;
             // 
             // txtSearch
             // 
@@ -219,6 +222,7 @@ namespace VIEW
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(426, 30);
             this.txtSearch.TabIndex = 1;
+            this.txtSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyDown);
             // 
             // grcInfo
             // 
@@ -246,6 +250,7 @@ namespace VIEW
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel10, 1, 4);
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel8, 1, 3);
+            this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel12, 3, 4);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(2, 33);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -271,7 +276,7 @@ namespace VIEW
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(465, 33);
-            this.tableLayoutPanel7.TabIndex = 1;
+            this.tableLayoutPanel7.TabIndex = 3;
             // 
             // label2
             // 
@@ -290,6 +295,7 @@ namespace VIEW
             this.txtSDT.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSDT.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDT.Location = new System.Drawing.Point(142, 3);
+            this.txtSDT.MaxLength = 20;
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(320, 30);
             this.txtSDT.TabIndex = 1;
@@ -299,8 +305,8 @@ namespace VIEW
             this.tableLayoutPanel9.ColumnCount = 2;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel9.Controls.Add(this.label4, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.txtDiaChi, 1, 0);
+            this.tableLayoutPanel9.Controls.Add(this.label6, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.txtEmail, 1, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(536, 59);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
@@ -308,28 +314,29 @@ namespace VIEW
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
             this.tableLayoutPanel9.Size = new System.Drawing.Size(465, 34);
-            this.tableLayoutPanel9.TabIndex = 3;
+            this.tableLayoutPanel9.TabIndex = 4;
             // 
-            // label4
+            // label6
             // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 34);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Địa Chỉ";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.AutoSize = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(133, 34);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Email";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtDiaChi
+            // txtEmail
             // 
-            this.txtDiaChi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDiaChi.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(142, 3);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(320, 30);
-            this.txtDiaChi.TabIndex = 1;
+            this.txtEmail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtEmail.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(142, 3);
+            this.txtEmail.MaxLength = 30;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(320, 30);
+            this.txtEmail.TabIndex = 0;
             // 
             // tableLayoutPanel10
             // 
@@ -344,7 +351,7 @@ namespace VIEW
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel10.Size = new System.Drawing.Size(465, 37);
-            this.tableLayoutPanel10.TabIndex = 4;
+            this.tableLayoutPanel10.TabIndex = 2;
             // 
             // label5
             // 
@@ -363,6 +370,7 @@ namespace VIEW
             this.txtNguoiDaiDien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNguoiDaiDien.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNguoiDaiDien.Location = new System.Drawing.Point(142, 3);
+            this.txtNguoiDaiDien.MaxLength = 30;
             this.txtNguoiDaiDien.Name = "txtNguoiDaiDien";
             this.txtNguoiDaiDien.Size = new System.Drawing.Size(320, 30);
             this.txtNguoiDaiDien.TabIndex = 1;
@@ -387,6 +395,7 @@ namespace VIEW
             this.txtMaNXB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtMaNXB.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNXB.Location = new System.Drawing.Point(142, 3);
+            this.txtMaNXB.MaxLength = 10;
             this.txtMaNXB.Name = "txtMaNXB";
             this.txtMaNXB.ReadOnly = true;
             this.txtMaNXB.Size = new System.Drawing.Size(320, 30);
@@ -400,7 +409,7 @@ namespace VIEW
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(133, 33);
-            this.label1.TabIndex = 2;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Mã NXB";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -417,7 +426,7 @@ namespace VIEW
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(465, 34);
-            this.tableLayoutPanel8.TabIndex = 5;
+            this.tableLayoutPanel8.TabIndex = 1;
             // 
             // label3
             // 
@@ -436,9 +445,47 @@ namespace VIEW
             this.txtTenNXB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtTenNXB.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenNXB.Location = new System.Drawing.Point(142, 3);
+            this.txtTenNXB.MaxLength = 30;
             this.txtTenNXB.Name = "txtTenNXB";
             this.txtTenNXB.Size = new System.Drawing.Size(320, 30);
             this.txtTenNXB.TabIndex = 1;
+            // 
+            // tableLayoutPanel12
+            // 
+            this.tableLayoutPanel12.ColumnCount = 2;
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel12.Controls.Add(this.txtDiaChi, 1, 0);
+            this.tableLayoutPanel12.Controls.Add(this.label4, 0, 0);
+            this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(536, 99);
+            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
+            this.tableLayoutPanel12.RowCount = 1;
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(465, 37);
+            this.tableLayoutPanel12.TabIndex = 5;
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDiaChi.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiaChi.Location = new System.Drawing.Point(142, 3);
+            this.txtDiaChi.MaxLength = 50;
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(320, 30);
+            this.txtDiaChi.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(133, 37);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Địa Chỉ";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel11
             // 
@@ -465,7 +512,7 @@ namespace VIEW
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel11.Size = new System.Drawing.Size(1494, 56);
-            this.tableLayoutPanel11.TabIndex = 1;
+            this.tableLayoutPanel11.TabIndex = 0;
             // 
             // btRefresh
             // 
@@ -568,7 +615,7 @@ namespace VIEW
             this.grcList.Location = new System.Drawing.Point(3, 251);
             this.grcList.Name = "grcList";
             this.grcList.Size = new System.Drawing.Size(1494, 369);
-            this.grcList.TabIndex = 2;
+            this.grcList.TabIndex = 1;
             this.grcList.Text = "Danh sách nhà xuất bản";
             // 
             // dgvListNXB
@@ -579,9 +626,9 @@ namespace VIEW
             this.dgvListNXB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvListNXB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -593,20 +640,13 @@ namespace VIEW
             this.colEmail,
             this.colDiaChi,
             this.colNguoiDaiDien});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvListNXB.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvListNXB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvListNXB.EnableHeadersVisualStyles = false;
             this.dgvListNXB.Location = new System.Drawing.Point(2, 33);
             this.dgvListNXB.Name = "dgvListNXB";
             this.dgvListNXB.ReadOnly = true;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvListNXB.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvListNXB.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvListNXB.RowTemplate.Height = 30;
             this.dgvListNXB.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListNXB.Size = new System.Drawing.Size(1490, 334);
@@ -687,6 +727,8 @@ namespace VIEW
             this.tableLayoutPanel6.PerformLayout();
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
+            this.tableLayoutPanel12.ResumeLayout(false);
+            this.tableLayoutPanel12.PerformLayout();
             this.tableLayoutPanel11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grcList)).EndInit();
             this.grcList.ResumeLayout(false);
@@ -703,8 +745,8 @@ namespace VIEW
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.RadioButton rbMa;
-        private System.Windows.Forms.RadioButton rbTen;
+        private System.Windows.Forms.RadioButton chkMa;
+        private System.Windows.Forms.RadioButton chkTen;
         private System.Windows.Forms.TextBox txtSearch;
         private DevExpress.XtraEditors.GroupControl grcInfo;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
@@ -739,5 +781,8 @@ namespace VIEW
         private System.Windows.Forms.DataGridViewTextBoxColumn colEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDiaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNguoiDaiDien;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
+        private System.Windows.Forms.Label label6;
     }
 }

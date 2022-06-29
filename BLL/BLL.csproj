@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL_DocGia.cs" />
+    <Compile Include="BLL_KeSach.cs" />
     <Compile Include="BLL_NXB.cs" />
+    <Compile Include="BLL_TacGia.cs" />
+    <Compile Include="BLL_TheLoai.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

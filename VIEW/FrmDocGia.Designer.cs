@@ -30,14 +30,16 @@ namespace VIEW
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDocGia));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.grcSearch = new DevExpress.XtraEditors.GroupControl();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.chkMa = new System.Windows.Forms.RadioButton();
+            this.chkTen = new System.Windows.Forms.RadioButton();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,30 +50,38 @@ namespace VIEW
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtMaDocGia = new System.Windows.Forms.TextBox();
+            this.txtTenDocGia = new System.Windows.Forms.TextBox();
+            this.txtCCCD = new System.Windows.Forms.TextBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.chkNam = new System.Windows.Forms.RadioButton();
+            this.chkNu = new System.Windows.Forms.RadioButton();
+            this.dtNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
+            this.btRefresh = new DevExpress.XtraEditors.SimpleButton();
+            this.btAdd = new DevExpress.XtraEditors.SimpleButton();
+            this.btChange = new DevExpress.XtraEditors.SimpleButton();
+            this.btDel = new DevExpress.XtraEditors.SimpleButton();
+            this.btSave = new DevExpress.XtraEditors.SimpleButton();
+            this.btExit = new DevExpress.XtraEditors.SimpleButton();
+            this.btCancle = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvListDocGia = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
-            this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grcSearch)).BeginInit();
+            this.grcSearch.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
@@ -81,7 +91,7 @@ namespace VIEW
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListDocGia)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -106,7 +116,7 @@ namespace VIEW
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel2.Controls.Add(this.groupControl2, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.grcSearch, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.groupControl3, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
@@ -116,25 +126,25 @@ namespace VIEW
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1494, 243);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // groupControl2
+            // grcSearch
             // 
-            this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupControl2.AppearanceCaption.Options.UseFont = true;
-            this.groupControl2.CaptionImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("groupControl2.CaptionImageOptions.SvgImage")));
-            this.groupControl2.Controls.Add(this.tableLayoutPanel4);
-            this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl2.Location = new System.Drawing.Point(3, 3);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(292, 237);
-            this.groupControl2.TabIndex = 0;
-            this.groupControl2.Text = "Tìm kiếm";
+            this.grcSearch.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grcSearch.AppearanceCaption.Options.UseFont = true;
+            this.grcSearch.CaptionImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("grcSearch.CaptionImageOptions.SvgImage")));
+            this.grcSearch.Controls.Add(this.tableLayoutPanel4);
+            this.grcSearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grcSearch.Location = new System.Drawing.Point(3, 3);
+            this.grcSearch.Name = "grcSearch";
+            this.grcSearch.Size = new System.Drawing.Size(292, 237);
+            this.grcSearch.TabIndex = 0;
+            this.grcSearch.Text = "Tìm kiếm";
             // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel6, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.textBox1, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.txtSearch, 0, 2);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(2, 33);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -151,8 +161,8 @@ namespace VIEW
             this.tableLayoutPanel6.ColumnCount = 2;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.radioButton1, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.radioButton2, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.chkMa, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.chkTen, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 43);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -161,43 +171,44 @@ namespace VIEW
             this.tableLayoutPanel6.Size = new System.Drawing.Size(282, 84);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
-            // radioButton1
+            // chkMa
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton1.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(3, 3);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.radioButton1.Size = new System.Drawing.Size(135, 78);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Mã Độc giả";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.chkMa.AutoSize = true;
+            this.chkMa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chkMa.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkMa.Location = new System.Drawing.Point(3, 3);
+            this.chkMa.Name = "chkMa";
+            this.chkMa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.chkMa.Size = new System.Drawing.Size(135, 78);
+            this.chkMa.TabIndex = 0;
+            this.chkMa.TabStop = true;
+            this.chkMa.Text = "Mã Độc giả";
+            this.chkMa.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // chkTen
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton2.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(144, 3);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.radioButton2.Size = new System.Drawing.Size(135, 78);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Tên Độc giả";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.chkTen.AutoSize = true;
+            this.chkTen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chkTen.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkTen.Location = new System.Drawing.Point(144, 3);
+            this.chkTen.Name = "chkTen";
+            this.chkTen.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.chkTen.Size = new System.Drawing.Size(135, 78);
+            this.chkTen.TabIndex = 1;
+            this.chkTen.TabStop = true;
+            this.chkTen.Text = "Tên Độc giả";
+            this.chkTen.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(10, 133);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(268, 36);
-            this.textBox1.TabIndex = 1;
+            this.txtSearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSearch.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(10, 133);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(268, 36);
+            this.txtSearch.TabIndex = 1;
+            this.txtSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyDown);
             // 
             // groupControl3
             // 
@@ -230,14 +241,14 @@ namespace VIEW
             this.tableLayoutPanel5.Controls.Add(this.label6, 4, 3);
             this.tableLayoutPanel5.Controls.Add(this.label7, 4, 5);
             this.tableLayoutPanel5.Controls.Add(this.label8, 4, 7);
-            this.tableLayoutPanel5.Controls.Add(this.textBox2, 2, 1);
-            this.tableLayoutPanel5.Controls.Add(this.textBox3, 2, 3);
-            this.tableLayoutPanel5.Controls.Add(this.textBox4, 5, 1);
-            this.tableLayoutPanel5.Controls.Add(this.textBox5, 5, 3);
-            this.tableLayoutPanel5.Controls.Add(this.textBox6, 5, 5);
-            this.tableLayoutPanel5.Controls.Add(this.textBox7, 5, 7);
+            this.tableLayoutPanel5.Controls.Add(this.txtMaDocGia, 2, 1);
+            this.tableLayoutPanel5.Controls.Add(this.txtTenDocGia, 2, 3);
+            this.tableLayoutPanel5.Controls.Add(this.txtCCCD, 5, 1);
+            this.tableLayoutPanel5.Controls.Add(this.txtSDT, 5, 3);
+            this.tableLayoutPanel5.Controls.Add(this.txtEmail, 5, 5);
+            this.tableLayoutPanel5.Controls.Add(this.txtDiaChi, 5, 7);
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel7, 2, 7);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker1, 2, 5);
+            this.tableLayoutPanel5.Controls.Add(this.dtNgaySinh, 2, 5);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(2, 33);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -350,67 +361,68 @@ namespace VIEW
             this.label8.Text = "Địa chỉ";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // txtMaDocGia
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox2.Location = new System.Drawing.Point(239, 13);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(290, 30);
-            this.textBox2.TabIndex = 8;
+            this.txtMaDocGia.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtMaDocGia.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.txtMaDocGia.Location = new System.Drawing.Point(239, 13);
+            this.txtMaDocGia.Name = "txtMaDocGia";
+            this.txtMaDocGia.ReadOnly = true;
+            this.txtMaDocGia.Size = new System.Drawing.Size(290, 30);
+            this.txtMaDocGia.TabIndex = 8;
             // 
-            // textBox3
+            // txtTenDocGia
             // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox3.Location = new System.Drawing.Point(239, 60);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(290, 30);
-            this.textBox3.TabIndex = 9;
+            this.txtTenDocGia.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtTenDocGia.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.txtTenDocGia.Location = new System.Drawing.Point(239, 60);
+            this.txtTenDocGia.Name = "txtTenDocGia";
+            this.txtTenDocGia.Size = new System.Drawing.Size(290, 30);
+            this.txtTenDocGia.TabIndex = 9;
             // 
-            // textBox4
+            // txtCCCD
             // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox4.Location = new System.Drawing.Point(830, 13);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(290, 30);
-            this.textBox4.TabIndex = 10;
+            this.txtCCCD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtCCCD.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.txtCCCD.Location = new System.Drawing.Point(830, 13);
+            this.txtCCCD.Name = "txtCCCD";
+            this.txtCCCD.Size = new System.Drawing.Size(290, 30);
+            this.txtCCCD.TabIndex = 10;
             // 
-            // textBox5
+            // txtSDT
             // 
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox5.Location = new System.Drawing.Point(830, 60);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(290, 30);
-            this.textBox5.TabIndex = 11;
+            this.txtSDT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSDT.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.txtSDT.Location = new System.Drawing.Point(830, 60);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(290, 30);
+            this.txtSDT.TabIndex = 11;
             // 
-            // textBox6
+            // txtEmail
             // 
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox6.Location = new System.Drawing.Point(830, 107);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(290, 30);
-            this.textBox6.TabIndex = 12;
+            this.txtEmail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtEmail.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.txtEmail.Location = new System.Drawing.Point(830, 107);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(290, 30);
+            this.txtEmail.TabIndex = 12;
             // 
-            // textBox7
+            // txtDiaChi
             // 
-            this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox7.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.textBox7.Location = new System.Drawing.Point(830, 154);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(290, 30);
-            this.textBox7.TabIndex = 13;
+            this.txtDiaChi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDiaChi.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.txtDiaChi.Location = new System.Drawing.Point(830, 154);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(290, 30);
+            this.txtDiaChi.TabIndex = 13;
             // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.ColumnCount = 2;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.radioButton3, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.radioButton4, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.chkNam, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.chkNu, 1, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(239, 154);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -419,44 +431,44 @@ namespace VIEW
             this.tableLayoutPanel7.Size = new System.Drawing.Size(290, 31);
             this.tableLayoutPanel7.TabIndex = 14;
             // 
-            // radioButton3
+            // chkNam
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(3, 3);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.radioButton3.Size = new System.Drawing.Size(139, 25);
-            this.radioButton3.TabIndex = 0;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Nam";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.chkNam.AutoSize = true;
+            this.chkNam.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chkNam.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkNam.Location = new System.Drawing.Point(3, 3);
+            this.chkNam.Name = "chkNam";
+            this.chkNam.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.chkNam.Size = new System.Drawing.Size(139, 25);
+            this.chkNam.TabIndex = 0;
+            this.chkNam.TabStop = true;
+            this.chkNam.Text = "Nam";
+            this.chkNam.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // chkNu
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(148, 3);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.radioButton4.Size = new System.Drawing.Size(139, 25);
-            this.radioButton4.TabIndex = 1;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Nữ";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.chkNu.AutoSize = true;
+            this.chkNu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chkNu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkNu.Location = new System.Drawing.Point(148, 3);
+            this.chkNu.Name = "chkNu";
+            this.chkNu.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.chkNu.Size = new System.Drawing.Size(139, 25);
+            this.chkNu.TabIndex = 1;
+            this.chkNu.TabStop = true;
+            this.chkNu.Text = "Nữ";
+            this.chkNu.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dtNgaySinh
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.CustomFormat = "dd/MM/yyy";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(239, 107);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(160, 28);
-            this.dateTimePicker1.TabIndex = 15;
+            this.dtNgaySinh.CalendarFont = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtNgaySinh.CustomFormat = "dd/MM/yyy";
+            this.dtNgaySinh.Font = new System.Drawing.Font("Tahoma", 13F);
+            this.dtNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtNgaySinh.Location = new System.Drawing.Point(239, 107);
+            this.dtNgaySinh.Name = "dtNgaySinh";
+            this.dtNgaySinh.Size = new System.Drawing.Size(160, 28);
+            this.dtNgaySinh.TabIndex = 15;
             // 
             // tableLayoutPanel3
             // 
@@ -471,13 +483,13 @@ namespace VIEW
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.555555F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Controls.Add(this.simpleButton2, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.simpleButton3, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.simpleButton4, 3, 0);
-            this.tableLayoutPanel3.Controls.Add(this.simpleButton5, 4, 0);
-            this.tableLayoutPanel3.Controls.Add(this.simpleButton6, 5, 0);
-            this.tableLayoutPanel3.Controls.Add(this.simpleButton8, 7, 0);
-            this.tableLayoutPanel3.Controls.Add(this.simpleButton7, 6, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btRefresh, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btAdd, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btChange, 3, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btDel, 4, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btSave, 5, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btExit, 7, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btCancle, 6, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 252);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -486,96 +498,103 @@ namespace VIEW
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1494, 56);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
-            // simpleButton2
+            // btRefresh
             // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
-            this.simpleButton2.Location = new System.Drawing.Point(252, 3);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(159, 50);
-            this.simpleButton2.TabIndex = 1;
-            this.simpleButton2.Text = "Làm mới";
+            this.btRefresh.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btRefresh.Appearance.Options.UseFont = true;
+            this.btRefresh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btRefresh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btRefresh.ImageOptions.SvgImage")));
+            this.btRefresh.Location = new System.Drawing.Point(252, 3);
+            this.btRefresh.Name = "btRefresh";
+            this.btRefresh.Size = new System.Drawing.Size(159, 50);
+            this.btRefresh.TabIndex = 1;
+            this.btRefresh.Text = "Làm mới";
+            this.btRefresh.Click += new System.EventHandler(this.btRefresh_Click);
             // 
-            // simpleButton3
+            // btAdd
             // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
-            this.simpleButton3.Location = new System.Drawing.Point(417, 3);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(159, 50);
-            this.simpleButton3.TabIndex = 2;
-            this.simpleButton3.Text = "Thêm ";
+            this.btAdd.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAdd.Appearance.Options.UseFont = true;
+            this.btAdd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btAdd.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btAdd.ImageOptions.SvgImage")));
+            this.btAdd.Location = new System.Drawing.Point(417, 3);
+            this.btAdd.Name = "btAdd";
+            this.btAdd.Size = new System.Drawing.Size(159, 50);
+            this.btAdd.TabIndex = 2;
+            this.btAdd.Text = "Thêm ";
+            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
-            // simpleButton4
+            // btChange
             // 
-            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton4.Appearance.Options.UseFont = true;
-            this.simpleButton4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton4.ImageOptions.SvgImage")));
-            this.simpleButton4.Location = new System.Drawing.Point(582, 3);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(159, 50);
-            this.simpleButton4.TabIndex = 3;
-            this.simpleButton4.Text = "Sửa";
+            this.btChange.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btChange.Appearance.Options.UseFont = true;
+            this.btChange.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btChange.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btChange.ImageOptions.SvgImage")));
+            this.btChange.Location = new System.Drawing.Point(582, 3);
+            this.btChange.Name = "btChange";
+            this.btChange.Size = new System.Drawing.Size(159, 50);
+            this.btChange.TabIndex = 3;
+            this.btChange.Text = "Sửa";
+            this.btChange.Click += new System.EventHandler(this.btChange_Click);
             // 
-            // simpleButton5
+            // btDel
             // 
-            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton5.ImageOptions.SvgImage")));
-            this.simpleButton5.Location = new System.Drawing.Point(747, 3);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(159, 50);
-            this.simpleButton5.TabIndex = 4;
-            this.simpleButton5.Text = "Xóa";
+            this.btDel.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDel.Appearance.Options.UseFont = true;
+            this.btDel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btDel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btDel.ImageOptions.SvgImage")));
+            this.btDel.Location = new System.Drawing.Point(747, 3);
+            this.btDel.Name = "btDel";
+            this.btDel.Size = new System.Drawing.Size(159, 50);
+            this.btDel.TabIndex = 4;
+            this.btDel.Text = "Xóa";
+            this.btDel.Click += new System.EventHandler(this.btDel_Click);
             // 
-            // simpleButton6
+            // btSave
             // 
-            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton6.Appearance.Options.UseFont = true;
-            this.simpleButton6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton6.ImageOptions.SvgImage")));
-            this.simpleButton6.Location = new System.Drawing.Point(912, 3);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(159, 50);
-            this.simpleButton6.TabIndex = 5;
-            this.simpleButton6.Text = "Lưu";
+            this.btSave.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSave.Appearance.Options.UseFont = true;
+            this.btSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btSave.ImageOptions.SvgImage")));
+            this.btSave.Location = new System.Drawing.Point(912, 3);
+            this.btSave.Name = "btSave";
+            this.btSave.Size = new System.Drawing.Size(159, 50);
+            this.btSave.TabIndex = 5;
+            this.btSave.Text = "Lưu";
+            this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
-            // simpleButton8
+            // btExit
             // 
-            this.simpleButton8.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton8.Appearance.Options.UseFont = true;
-            this.simpleButton8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton8.ImageOptions.SvgImage")));
-            this.simpleButton8.Location = new System.Drawing.Point(1242, 3);
-            this.simpleButton8.Name = "simpleButton8";
-            this.simpleButton8.Size = new System.Drawing.Size(159, 50);
-            this.simpleButton8.TabIndex = 7;
-            this.simpleButton8.Text = "Thoát";
+            this.btExit.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btExit.Appearance.Options.UseFont = true;
+            this.btExit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btExit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btExit.ImageOptions.SvgImage")));
+            this.btExit.Location = new System.Drawing.Point(1242, 3);
+            this.btExit.Name = "btExit";
+            this.btExit.Size = new System.Drawing.Size(159, 50);
+            this.btExit.TabIndex = 7;
+            this.btExit.Text = "Thoát";
+            this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 
-            // simpleButton7
+            // btCancle
             // 
-            this.simpleButton7.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton7.Appearance.Options.UseFont = true;
-            this.simpleButton7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton7.ImageOptions.SvgImage")));
-            this.simpleButton7.Location = new System.Drawing.Point(1077, 3);
-            this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(159, 50);
-            this.simpleButton7.TabIndex = 6;
-            this.simpleButton7.Text = "Hủy";
+            this.btCancle.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCancle.Appearance.Options.UseFont = true;
+            this.btCancle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btCancle.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btCancle.ImageOptions.SvgImage")));
+            this.btCancle.Location = new System.Drawing.Point(1077, 3);
+            this.btCancle.Name = "btCancle";
+            this.btCancle.Size = new System.Drawing.Size(159, 50);
+            this.btCancle.TabIndex = 6;
+            this.btCancle.Text = "Hủy";
+            this.btCancle.Click += new System.EventHandler(this.btCancle_Click);
             // 
             // groupControl1
             // 
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
             this.groupControl1.CaptionImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("groupControl1.CaptionImageOptions.SvgImage")));
-            this.groupControl1.Controls.Add(this.dataGridView1);
+            this.groupControl1.Controls.Add(this.dgvListDocGia);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(3, 314);
             this.groupControl1.Name = "groupControl1";
@@ -583,14 +602,98 @@ namespace VIEW
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Danh sách Độc giả";
             // 
-            // dataGridView1
+            // dgvListDocGia
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 33);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1490, 271);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvListDocGia.AllowUserToAddRows = false;
+            this.dgvListDocGia.AllowUserToDeleteRows = false;
+            this.dgvListDocGia.AllowUserToOrderColumns = true;
+            this.dgvListDocGia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListDocGia.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvListDocGia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListDocGia.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8});
+            this.dgvListDocGia.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvListDocGia.EnableHeadersVisualStyles = false;
+            this.dgvListDocGia.Location = new System.Drawing.Point(2, 33);
+            this.dgvListDocGia.Name = "dgvListDocGia";
+            this.dgvListDocGia.ReadOnly = true;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvListDocGia.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvListDocGia.RowTemplate.Height = 30;
+            this.dgvListDocGia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvListDocGia.Size = new System.Drawing.Size(1490, 271);
+            this.dgvListDocGia.TabIndex = 1;
+            this.dgvListDocGia.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListDocGia_CellClick);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "MaDocGia";
+            this.Column1.HeaderText = "Mã Độc giả";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "TenDocGia";
+            this.Column2.HeaderText = "Tên Độc giả";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "NgaySinh";
+            this.Column3.HeaderText = "Ngày sinh";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "GioiTinh";
+            this.Column4.HeaderText = "Giới tính";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "CCCD";
+            this.Column5.HeaderText = "CCCD/CMND";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "Phone";
+            this.Column6.HeaderText = "SĐT";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "Email";
+            this.Column7.HeaderText = "Email";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "DiaChi";
+            this.Column8.HeaderText = "Địa chỉ";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
             // 
             // FrmDocGia
             // 
@@ -601,10 +704,11 @@ namespace VIEW
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDocGia";
             this.Text = "Quản lý Độc giả";
+            this.Load += new System.EventHandler(this.FrmDocGia_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
-            this.groupControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grcSearch)).EndInit();
+            this.grcSearch.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
@@ -618,7 +722,7 @@ namespace VIEW
             this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListDocGia)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -628,22 +732,21 @@ namespace VIEW
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraEditors.SimpleButton simpleButton7;
-        private DevExpress.XtraEditors.SimpleButton simpleButton8;
+        private DevExpress.XtraEditors.SimpleButton btRefresh;
+        private DevExpress.XtraEditors.SimpleButton btAdd;
+        private DevExpress.XtraEditors.SimpleButton btChange;
+        private DevExpress.XtraEditors.SimpleButton btDel;
+        private DevExpress.XtraEditors.SimpleButton btSave;
+        private DevExpress.XtraEditors.SimpleButton btCancle;
+        private DevExpress.XtraEditors.SimpleButton btExit;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.GroupControl groupControl2;
+        private DevExpress.XtraEditors.GroupControl grcSearch;
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.RadioButton chkMa;
+        private System.Windows.Forms.RadioButton chkTen;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -653,15 +756,24 @@ namespace VIEW
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtMaDocGia;
+        private System.Windows.Forms.TextBox txtTenDocGia;
+        private System.Windows.Forms.TextBox txtCCCD;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.RadioButton chkNam;
+        private System.Windows.Forms.RadioButton chkNu;
+        private System.Windows.Forms.DateTimePicker dtNgaySinh;
+        private System.Windows.Forms.DataGridView dgvListDocGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
     }
 }

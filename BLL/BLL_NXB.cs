@@ -45,7 +45,7 @@ namespace BLL
         public bool insertNXB(DTO_NXB _NXB)
         {
             string _strSQL = "insert into tbl_NhaXuatBan values(@MaNXB, @TenNXB, @Phone, @Email, @DiaChi, @NguoiDaiDien)";
-            SqlParameter[] _sqlParameters = new SqlParameter[5];
+            SqlParameter[] _sqlParameters = new SqlParameter[6];
             _sqlParameters[0] = new SqlParameter("@MaNXB", SqlDbType.VarChar);
             _sqlParameters[0].Value = _NXB.MaNXB;
             _sqlParameters[1] = new SqlParameter("@TenNXB", SqlDbType.NVarChar);
@@ -65,7 +65,7 @@ namespace BLL
         public bool updateNXB(DTO_NXB _NXB)
         {
             string _strSQL = "update tbl_NhaXuatBan set TenNXB = @TenNXB, Phone = @Phone, Email = @Email, DiaChi = @DiaChi, NguoiDaiDien = @NguoiDaiDien where MaNXB = @MaNXB";
-            SqlParameter[] _sqlParameters = new SqlParameter[5];
+            SqlParameter[] _sqlParameters = new SqlParameter[6];
             _sqlParameters[0] = new SqlParameter("@MaNXB", SqlDbType.VarChar);
             _sqlParameters[0].Value = _NXB.MaNXB;
             _sqlParameters[1] = new SqlParameter("@TenNXB", SqlDbType.NVarChar);
